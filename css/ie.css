@@ -1,0 +1,77 @@
+html.js div.map-zoom ul li,
+html.js div.currency-dropdown ul li {
+  height: 27px !important;
+  width: 125px !important;
+  padding-top: 7px !important;
+  border: 1px solid #d8d9da !important;
+  border-top: 0 !important;
+}
+html.js div.currency-dropdown{
+  z-index: 120;
+  position: relative;
+}
+html.js div.currency-dropdown ul{
+  top: 36px;
+}
+.topic-menu-nav > li:first-child > span{
+  border-right: 1px solid #d8d9da;
+}
+html.js div.map-zoom ul{
+  z-index: 100000;
+}
+
+
+
+
+
+/*
+html.js div.map-zoom ul li {
+  height: 27px !important;
+  width: 125px !important;
+  padding-top: 7px !important;
+  border: 1px solid #d8d9da !important;
+  border-top: 0 !important;
+}
+html.js div.map-zoom span:hover {
+	background-position: 105px 8px !important;
+}
+.topic-menu-nav {
+  position: relative;
+  z-index: 120;
+  width: 100%;
+  border: 0;
+}
+.topic-menu-nav > li{
+	width: 49.9% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.topic-menu-nav > li:first-child {
+	width: 49.9% !important;
+}
+
+.topic-menu-nav > li > span {
+  border-left: 1px solid #d8d9da;
+}
+.topic-menu-nav > li:first-child > span{
+  border-left: 0;
+}
+
+.topic-menu-nav li.has-child ul {
+  display:none;
+  height: auto;
+}
+.topic-menu-nav li.has-child ul {
+  margin-top: 1px;
+}
+.topic-menu-nav li.has-child ul li {
+  height: 27px;
+  opacity: 1;
+  padding-top: 13px;
+  border: 1px solid #d8d9da;
+  border-top: 0;
+}
+#uspres-wrapper .topic-menu-nav li.tab-2 span{
+  border-right: 0 !important;
+}
+*/

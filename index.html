@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!-- BIG MAC INDEX
+     January 2015
+     -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Big Mac index</title>
+    <!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://media.economist.com/sites/all/themes/econfinal/js/plugins/raphael.js"></script>
+    <script src="http://media.economist.com/sites/all/themes/econfinal/js/plugins/highcharts.js"></script>
+<!--     <script src="http://code.highcharts.com/master/highcharts.js"></script> -->
+
+    <script src="http://media.economist.com/sites/all/themes/econfinal/js/plugins/modernizr-2.6.2.min.js"></script>
+
+    <script src="http://infographics.economist.com/js_libraries/infographic_lib.js"></script>
+    <link href="http://infographics.economist.com/css_libraries/infographic_lib.css" rel="stylesheet" type="text/css" />
+
+    <!-- As many map data files as it takes... -->
+    <script src="http://infographics.economist.com/js_maps/bigmac/bigmacmap_20150114.js" type="text/javascript"></script>
+    <!-- Data files: lots of them. Append new data files to this list... -->
+    <script src="public/bigmac_Apr2000.js" type="text/javascript"></script>
+    <script src="public/bigmac_Apr2001.js" type="text/javascript"></script>
+    <script src="public/bigmac_Apr2002.js" type="text/javascript"></script>
+    <script src="public/bigmac_Apr2003.js" type="text/javascript"></script>
+    <script src="public/bigmac_May2004.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jun2005.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2006.js" type="text/javascript"></script>
+    <script src="public/bigmac_May2006.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2007.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jun2007.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jun2008.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2009.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2010.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2010.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2011.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2012.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2012.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2013.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2013.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2014.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2014.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2015.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2015.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2016.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2016.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2017.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jul2017.js" type="text/javascript"></script>
+    <script src="public/bigmac_Jan2018.js" type="text/javascript"></script>
+    <!-- Model -->
+    <script src="js/bigmac_model.js" type="text/javascript"></script>
+    <!-- Component assembler -->
+    <script src="js/bigmac_init.js" type="text/javascript"></script>
+    <!--  -->
+    <script src="js/bigmac_control.js" type="text/javascript"></script>
+    <!-- Data filters -->
+    <script src="js/bigmac_filters.js" type="text/javascript"></script>
+    <script src="js/bigmac_map.js" type="text/javascript"></script>
+    <script src="js/bigmac_barchart.js" type="text/javascript"></script>
+    <script src="js/chart_minmax.js" type="text/javascript"></script>
+    <script src="js/bigmac_scatterchart.js" type="text/javascript"></script>
+   <script src="js/bigmac_linechart.js" type="text/javascript"></script>
+    <script src="js/bigmac_infobox.js" type="text/javascript"></script>
+
+    <!-- CSS -->
+    <link href="css/bigmac.css" rel="stylesheet" type="text/css" />
+
+    <!--[if LT IE 9]>
+      <link type="text/css" rel="stylesheet" media="all" href="css/ie.css" />
+    <![endif]-->
+
+    <style>
+      body {
+        color: #333333;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 62.5%;
+      }
+    </style>
+    <script>
+
+      // Create a namespace to shield our functions.
+      var Econ = Econ || {};
+      // Return true = touch based devices.
+      Econ.isTouchDevice = function() {
+        return ('ontouchstart' in window);
+      }
+      // Return true if the object passed is empty. jQuery from version 1.4 has implemented the isEmptyObject(object) method
+      // (http://api.jquery.com/jQuery.isEmptyObject/) when/if we update the jQuery library this function can be replaced
+      // with the isEmptyObject method.
+      Econ.isEmptyObject = function(o) {
+        for(var p in o) {
+          if(o.hasOwnProperty(p)) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="bigmac-wrapper"></div>
+  </body>
+</html>
